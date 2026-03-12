@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>박경수 Portfolio</title>
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/portfolio.js" defer></script>
+</head>
+<body>
+
+  <header id="header">
+    <div class="container">
+      <h1 class="logo">PGS Portfolio</h1>
+
+      <nav id="nav">
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILLS</a></li>
+          <li><a href="#WEBDESIGN">WEB</a></li>
+          <li><a href="#GRAPHICDESIGN">GRAPHIC</a></li>
+          <li><a href="#VIDEODESIGN">VIDEO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" type="button" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 홈 -->
+  <section id="home">
+    <div class="meteor-bg">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="home-overlay"></div>
+
+    <div class="hometitle">
+      <p class="home-tag reveal">MOTION / WEB / DESIGN</p>
+      <div id="typing"></div>
+      <div id="subtitle">CREATIVE DESIGN PORTFOLIO</div>
+
+      <div class="home-btns reveal">
+        <a href="#WEBDESIGN" class="home-btn primary">작업물 보기</a>
+        <a href="#about" class="home-btn ghost">About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 어바웃 -->
+  <section id="about">
+    <div class="section-head reveal">
+      <p class="section-label">PROFILE</p>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-wrap reveal">
+      <div class="about-left">
+        <img src="images/profile.png" alt="박경수 프로필 이미지" />
+      </div>
+
+      <div class="about-right">
+        <div class="about-info">
+          <p><span>Name</span> 박경수</p>
+          <p><span>Call</span> 010-8755-1668</p>
+          <p><span>Email</span> kilkil789456@gmail.com</p>
+        </div>
+
+        <div class="about-text">
+          영상편집, 모션그래픽, 코딩, 익스프레션을 중심으로 작업하고 있으며<br />
+          웹 퍼블리싱까지 함께 다룰 수 있는 디자이너입니다.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 스킬 -->
+  <section id="skill">
+    <div class="section-head reveal">
+      <p class="section-label">TOOLS</p>
+      <h2>Skill</h2>
+    </div>
+
+    <ul class="skill-list">
+      <li class="skill-tool reveal">
+        <img src="images/illustration.png" alt="Illustrator" />
+        <h3>Illustrator</h3>
+        <p>로고 및 편집 디자인</p>
+        <div class="skill-meta"><span>Design</span></div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/photoshop.png" alt="Photoshop" />
+        <h3>Photoshop</h3>
+        <p>누끼 및 보정 작업</p>
+        <div class="skill-meta"><span>Retouch</span></div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/aftereffects.png" alt="After Effects" />
+        <h3>After Effects</h3>
+        <p>모션그래픽 제작</p>
+        <div class="skill-meta"><span>Motion</span></div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/premiere.png" alt="Premiere Pro" />
+        <h3>Premiere Pro</h3>
+        <p>영상 편집 및 컷 편집</p>
+        <div class="skill-meta"><span>Editing</span></div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/html.png" alt="HTML" />
+        <h3>HTML</h3>
+        <p>웹 구조 설계</p>
+        <div class="skill-meta"><span>Markup</span></div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/css.png" alt="CSS" />
+        <h3>CSS</h3>
+        <p>반응형 스타일 구현</p>
+        <div class="skill-meta"><span>Responsive</span></div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/blender.png" alt="Blender" />
+        <h3>Blender</h3>
+        <p>기초 3D 모델링</p>
+        <div class="skill-meta"><span>3D</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 웹 디자인 -->
+  <section id="WEBDESIGN" class="portfolio">
+    <div class="section-head reveal">
+      <p class="section-label">PORTFOLIO</p>
+      <h2>Web Design</h2>
+    </div>
+
+    <div class="portfolio-menu reveal">
+      <button class="portfolio-btn active" type="button" onclick="scrollToSection('WEBDESIGN')">WEB</button>
+      <button class="portfolio-btn" type="button" onclick="scrollToSection('GRAPHICDESIGN')">GRAPHIC</button>
+      <button class="portfolio-btn" type="button" onclick="scrollToSection('VIDEODESIGN')">VIDEO</button>
+    </div>
+
+    <div class="portfolio-container reveal">
+      <button class="arrow left" type="button">←</button>
+
+      <div class="portfolio-slider">
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap thumb-tone" data-video="video/TYPO.mp4">
+            <img src="images/typo.PNG" alt="Typography 웹 디자인 작업물" />
+            <div class="portfolio-hover">
+              <strong>TYPOGRAPHY</strong>
+              <span>CLICK!</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <p class="portfolio-desc">타이포그래피 작업물</p>
+            <p>사용툴 : AFTEREFFEECTS / ILLUSTARTOR / PHOTOSHOP</p>
+            <p>제작기간 : 3일</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap thumb-tone" data-video="video/TYPO.mp4">
+            <img src="images/2d-animation.jpg" alt="2D Animation 웹 작업물" />
+            <div class="portfolio-hover">
+              <strong>2D-ANIMATION</strong>
+              <span>CLICK!</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <p class="portfolio-desc"> 웹 작업물</p>
+            <p>사용툴 : HTML / CSS / JS</p>
+            <p>제작기간 : 5일</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="arrow right" type="button">→</button>
+    </div>
+  </section>
+
+  <!-- 그래픽 디자인 -->
+  <section id="GRAPHICDESIGN" class="portfolio">
+    <div class="section-head reveal">
+      <p class="section-label">PORTFOLIO</p>
+      <h2>Graphic Design</h2>
+    </div>
+
+    <div class="portfolio-menu reveal">
+      <button class="portfolio-btn" type="button" onclick="scrollToSection('WEBDESIGN')">WEB</button>
+      <button class="portfolio-btn active" type="button">GRAPHIC</button>
+      <button class="portfolio-btn" type="button" onclick="scrollToSection('VIDEODESIGN')">VIDEO</button>
+    </div>
+
+    <div class="portfolio-container reveal">
+      <button class="arrow left" type="button">←</button>
+
+      <div class="portfolio-slider">
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap thumb-tone" data-video="video/TYPO.mp4">
+            <img src="images/2d-animation.jpg" alt="2D Animation 그래픽 작업물" />
+            <div class="portfolio-hover">
+              <strong>2D ANIMATION</strong>
+              <span>CLICK!</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <p class="portfolio-desc">캐릭터 애니메이션</p>
+            <p>사용툴 : PHOTOSHOP / ILLUSTRATOR</p>
+            <p>제작기간 : 2일</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap thumb-tone" data-video="video/TYPO.mp4">
+            <img src="images/typo.PNG" alt="Typography 그래픽 작업물" />
+            <div class="portfolio-hover">
+              <strong>TYPOGRAPHY</strong>
+              <span>CLICK!</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <p class="portfolio-desc">블렌더로만들기? 뭔지잘모름아직</p>
+            <p>사용툴 : BLENDER</p>
+            <p>제작기간 : 1일</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="arrow right" type="button">→</button>
+    </div>
+  </section>
+
+  <!-- 비디오 디자인 -->
+  <section id="VIDEODESIGN" class="portfolio">
+    <div class="section-head reveal">
+      <p class="section-label">PORTFOLIO</p>
+      <h2>Video Design</h2>
+    </div>
+
+    <div class="portfolio-menu reveal">
+      <button class="portfolio-btn" type="button" onclick="scrollToSection('WEBDESIGN')">WEB</button>
+      <button class="portfolio-btn" type="button" onclick="scrollToSection('GRAPHICDESIGN')">GRAPHIC</button>
+      <button class="portfolio-btn active" type="button">VIDEO</button>
+    </div>
+
+    <div class="portfolio-container reveal">
+      <button class="arrow left" type="button">←</button>
+
+      <div class="portfolio-slider">
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap thumb-tone" data-video="video/TYPO.mp4">
+            <img src="images/youtube-icon.png" alt="Youtube Shorts 작업물" />
+            <div class="portfolio-hover">
+              <strong>YOUTUBE SHORTS</strong>
+              <span>CLICK!</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <p class="portfolio-desc">유튜브 쇼츠용 컷 편집 </p>
+            <p>사용툴 : Premiere / PHOTO SHOP</p>
+            <p>제작기간 : 1일</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap thumb-tone" data-video="video/TYPO.mp4">
+            <img src="images/free-sticker-identity-7590161.png" alt="Motion Graphic 작업물" />
+            <div class="portfolio-hover">
+              <strong>MOTION GRAPHIC</strong>
+              <span>CLICK!</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <p class="portfolio-desc">유튜브 쇼츠</p>
+            <p>사용툴 : Premiere / PHOTO SHOP</p>
+            <p>제작기간 : 2일</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="arrow right" type="button">→</button>
+    </div>
+  </section>
+
+  <!-- 콘택트 -->
+  <section id="contact">
+    <div class="section-head reveal">
+      <p class="section-label">CONTACT</p>
+      <h2>Let’s DESIGN </h2>
+    </div>
+
+    <div class="contact-box reveal">
+      <p>영상편집, 모션그래픽, 웹 퍼블리싱 작업 문의 환영합니다.</p>
+      <a href="mailto:kilkil789456@gmail.com">E-MAIL : kilkil789456@gmail.com</a> <br>
+      <a href="tel:01087551668">TEL : 010-8755-1668</a>      
+    </div>
+  </section>
+
+  
+  <div class="portfolio-modal">
+    <span class="close">&times;</span>
+
+    <img class="modal-img" src="" alt="확대 이미지" />
+
+    <video class="modal-video" controls playsinline>
+      <source src="" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">PGS Portfolio</p>
+      <p class="footer-text">© 2026 Park Gyeongsu. All Rights Reserved.</p>
+      <p class="footer-copy">Motion Graphic · Video Editing · Web Publishing</p>
+    </div>
+  </footer>
+
+</body>
+</html>
