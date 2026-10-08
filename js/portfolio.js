@@ -43,11 +43,15 @@ function scrollToSection(id) {
   $(".menu a").removeClass("active");
   $(`.menu a[href="#${id}"]`).addClass("active");
 
-  window.scrollTo(0, $target.offset().top - 70);
+  window.scrollTo({
+    top: $target.offset().top - 70,
+    behavior: "smooth"
+  });
 
   isMenuScrolling = false;
   updateActiveMenu();
 }
+
 
 /* 스크롤할시에 스르륵나오게하기 */
 function initReveal() {
@@ -66,6 +70,7 @@ function initReveal() {
   reveal();
   $(window).on("scroll", reveal);
 }
+
 
 /* 첫 홈화면 타이틀 다다다닥 타이핑 */
 function initTyping() {
@@ -87,6 +92,7 @@ function initTyping() {
   type();
 }
 
+
 /* 헤더 */
 function initHeader() {
   const $header = $("#header");
@@ -106,6 +112,7 @@ function initHeader() {
   $(window).on("scroll resize", updateHeader);
 }
 
+
 /* 모바일 메뉴 */
 function initMenu() {
   $(".hamburger").on("click", function () {
@@ -117,7 +124,8 @@ function initMenu() {
   });
 }
 
-/* 메뉴 클릭하면 바로 이동*/
+
+/* 메뉴 클릭하면 바로 이동 */
 function initSmoothScroll() {
   $(".menu a, .home-btn").on("click", function (e) {
     const href = $(this).attr("href");
@@ -136,7 +144,10 @@ function initSmoothScroll() {
       $(`.menu a[href="${href}"]`).addClass("active");
     }
 
-    window.scrollTo(0, $target.offset().top - 70);
+    window.scrollTo({
+      top: $target.offset().top - 70,
+      behavior: "smooth"
+    });
 
     isMenuScrolling = false;
     updateActiveMenu();
@@ -184,39 +195,69 @@ function initModal() {
     e.preventDefault();
     e.stopPropagation();
 
+    const youtubeId = $(this).data("youtube");
     const videoSrc = $(this).data("video");
     const imgSrc = $(this).find("img").attr("src");
+
     const $modal = $(".portfolio-modal");
     const $modalImg = $(".modal-img");
     const $modalVideo = $(".modal-video");
+    const $modalYoutube = $(".modal-youtube");
+
     const modalVideoEl = $modalVideo.get(0);
 
+    // 초기화
     $modalImg.hide().attr("src", "");
     $modalVideo.hide();
+    $modalYoutube.hide().attr("src", "");
 
     if (modalVideoEl) {
       modalVideoEl.pause();
       modalVideoEl.currentTime = 0;
     }
 
-    if (videoSrc) {
-      $(".modal-video source").attr("src", videoSrc);
-      if (modalVideoEl) {
-        modalVideoEl.load();
-      }
-      $modalVideo.css("display", "block");
+    // YouTube
+    if (youtubeId) {
+      $modalYoutube
+        .attr(
+          "src",
+          "https://www.youtube.com/embed/" +
+          youtubeId +
+          "?autoplay=1&rel=0"
+        )
+        .show();
+
       $modal.addClass("active");
       return;
     }
 
-    $modalImg.attr("src", imgSrc).css("display", "block");
+    // MP4
+    if (videoSrc) {
+      $(".modal-video source").attr("src", videoSrc);
+
+      if (modalVideoEl) {
+        modalVideoEl.load();
+      }
+
+      $modalVideo.show();
+      $modal.addClass("active");
+      return;
+    }
+
+    // 이미지
+    $modalImg
+      .attr("src", imgSrc)
+      .show();
+
     $modal.addClass("active");
   });
+
 
   $(".close").on("click", function (e) {
     e.stopPropagation();
     closeModal();
   });
+
 
   $(".portfolio-modal").on("click", function (e) {
     if (e.target === this) {
@@ -224,20 +265,26 @@ function initModal() {
     }
   });
 
+
   $(document).on("keydown", function (e) {
     if (e.key === "Escape") {
       closeModal();
     }
   });
 
+
   function closeModal() {
     const $modal = $(".portfolio-modal");
     const $modalImg = $(".modal-img");
     const $modalVideo = $(".modal-video");
+    const $modalYoutube = $(".modal-youtube");
+
     const modalVideoEl = $modalVideo.get(0);
 
     $modal.removeClass("active");
+
     $modalImg.hide().attr("src", "");
+    $modalYoutube.hide().attr("src", "");
     $modalVideo.hide();
 
     if (modalVideoEl) {

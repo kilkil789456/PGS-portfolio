@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박경수 Portfolio</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/portfolio.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container">
+
+      <h1 class="logo">PGS Portfolio</h1>
+
+      <nav id="nav">
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILLS</a></li>
+          <li><a href="#WEBDESIGN">TYPO</a></li>
+          <li><a href="#GRAPHICDESIGN">CUT</a></li>
+          <li><a href="#VIDEODESIGN">SHORTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" type="button" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- HOME -->
+  <section id="home">
+
+    <div class="meteor-bg">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span>
+    </div>
+
+    <div class="home-overlay"></div>
+
+    <div class="hometitle">
+
+      <p class="home-tag reveal">
+        MOTION / WEB / DESIGN
+      </p>
+
+      <div id="typing"></div>
+
+      <div id="subtitle">
+        PORTFOLIO
+      </div>
+
+      <div class="home-btns reveal">
+        <a href="#WEBDESIGN" class="home-btn primary">작업물</a>
+        <a href="#about" class="home-btn ghost">About Me</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="section-head reveal">
+      <p class="section-label">PROFILE</p>
+      <h2>A b o u t Me</h2>
+    </div>
+
+    <div class="about-wrap reveal">
+
+      <div class="about-left">
+        <img src="images/profile.png" alt="박경수 프로필 이미지">
+      </div>
+
+      <div class="about-right">
+
+        <div class="about-info">
+          <p><span>Name</span> 박경수</p>
+          <p><span>Call</span> 010-8755-1668</p>
+          <p><span>Email</span> kilkil789456@gmail.com</p>
+        </div>
+
+        <div class="about-text">
+          영상편집, 모션그래픽, 코딩, 익스프레션을 중심으로 작업하고 있으며<br>
+          웹 퍼블리싱까지 함께 다룰 수 있는 디자이너입니다.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILL -->
+  <section id="skill">
+
+    <div class="section-head reveal">
+      <p class="section-label">TOOLS</p>
+      <h2>S k i l l</h2>
+    </div>
+
+    <ul class="skill-list">
+
+      <li class="skill-tool reveal">
+        <img src="images/illustration.png" alt="Illustrator">
+        <h3>Illustrator</h3>
+        <p>로고 및 편집 디자인</p>
+        <div class="skill-meta">
+          <span>Design</span>
+        </div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/photoshop.png" alt="Photoshop">
+        <h3>Photoshop</h3>
+        <p>누끼 및 보정 작업</p>
+        <div class="skill-meta">
+          <span>Retouch</span>
+        </div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/aftereffects.png" alt="After Effects">
+        <h3>After Effects</h3>
+        <p>모션그래픽 제작</p>
+        <div class="skill-meta">
+          <span>Motion</span>
+        </div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/premiere.png" alt="Premiere Pro">
+        <h3>Premiere Pro</h3>
+        <p>영상 편집 및 컷 편집</p>
+        <div class="skill-meta">
+          <span>Editing</span>
+        </div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/html.png" alt="HTML">
+        <h3>HTML</h3>
+        <p>웹 구조 설계</p>
+        <div class="skill-meta">
+          <span>Markup</span>
+        </div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/css.png" alt="CSS">
+        <h3>CSS</h3>
+        <p>반응형 스타일 구현</p>
+        <div class="skill-meta">
+          <span>Responsive</span>
+        </div>
+      </li>
+
+      <li class="skill-tool reveal">
+        <img src="images/blender.png" alt="Blender">
+        <h3>Blender</h3>
+        <p>기초 3D 모델링</p>
+        <div class="skill-meta">
+          <span>3D</span>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- TYPOGRAPHY -->
+  <section id="WEBDESIGN" class="portfolio">
+
+    <div class="section-head reveal">
+      <p class="section-label">PORTFOLIO</p>
+      <h2>TypoGraphy</h2>
+    </div>
+
+    <div class="portfolio-menu reveal">
+
+      <button class="portfolio-btn active"
+              type="button"
+              onclick="scrollToSection('WEBDESIGN')">
+        TYPO
+      </button>
+
+      <button class="portfolio-btn"
+              type="button"
+              onclick="scrollToSection('GRAPHICDESIGN')">
+        CUT
+      </button>
+
+      <button class="portfolio-btn"
+              type="button"
+              onclick="scrollToSection('VIDEODESIGN')">
+        SHORTS
+      </button>
+
+    </div>
+
+
+    <div class="portfolio-container reveal">
+
+      <button class="arrow left" type="button">←</button>
+
+      <div class="portfolio-slider">
+
+        <!-- CATA TYPOGRAPHY -->
+        <article class="portfolio-item">
+
+          <div class="portfolio-img-wrap thumb-tone"
+               data-youtube="JYQLvSmdHSg">
+
+            <img src="images/typo.PNG"
+                 alt="Typography 웹 디자인 작업물">
+
+            <div class="portfolio-hover">
+              <strong>TYPOGRAPHY</strong>
+              <span>CLICK!</span>
+            </div>
+
+          </div>
+
+          <div class="portfolio-info">
+
+            <p class="portfolio-desc">
+              타이포그래피 작업물 : CATA
+            </p>
+
+            <p>
+              사용툴 : After effects / Illustrator / Photoshop
+            </p>
+
+            <p>
+              제작기간 : 30일
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- COKE ZERO -->
+        <article class="portfolio-item">
+
+          <div class="portfolio-img-wrap thumb-tone"
+               data-video="video/cokezero.final.mp4">
+
+            <img src="images/Coca-Cola-Logo.wine.png"
+                 alt="2D Animation 웹 작업물">
+
+            <div class="portfolio-hover">
+              <strong>COKE-ZERO</strong>
+              <span>CLICK!</span>
+            </div>
+
+          </div>
+
+          <div class="portfolio-info">
+
+            <p class="portfolio-desc">
+              광고 작업물 : COKE-ZERO
+            </p>
+
+            <p>
+              사용툴 : After effects / Premiere
+            </p>
+
+            <p>
+              제작기간 : 1일
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <button class="arrow right" type="button">→</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- CUT -->
+  <section id="GRAPHICDESIGN" class="portfolio">
+
+    <div class="section-head reveal">
+      <p class="section-label">PORTFOLIO</p>
+      <h2>CUT</h2>
+    </div>
+
+    <div class="portfolio-menu reveal">
+
+      <button class="portfolio-btn"
+              type="button"
+              onclick="scrollToSection('WEBDESIGN')">
+        TYPO
+      </button>
+
+      <button class="portfolio-btn active"
+              type="button">
+        CUT
+      </button>
+
+      <button class="portfolio-btn"
+              type="button"
+              onclick="scrollToSection('VIDEODESIGN')">
+        SHORTS
+      </button>
+
+    </div>
+
+
+    <div class="portfolio-container reveal">
+
+      <button class="arrow left" type="button">←</button>
+
+      <div class="portfolio-slider">
+
+        <!-- TEAM CONTEST -->
+        <article class="portfolio-item">
+
+          <div class="portfolio-img-wrap thumb-tone"
+               data-video="video/floor.mp4">
+
+            <img src="images/safe.png"
+                 alt="2D Animation 그래픽 작업물">
+
+            <div class="portfolio-hover">
+              <strong>TEAM CONTEST</strong>
+              <span>CLICK!</span>
+            </div>
+
+          </div>
+
+          <div class="portfolio-info">
+
+            <p class="portfolio-desc">
+              지붕사고 공모전
+            </p>
+
+            <p>
+              사용툴 : Photoshop / Illustrator / After effects
+            </p>
+
+            <p>
+              제작기간 : 5일
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- WEDDING -->
+        <article class="portfolio-item">
+
+          <div class="portfolio-img-wrap thumb-tone"
+               data-youtube="EiQBCsvwQhQ">
+
+            <img src="images/WEDDING.jpg"
+                 alt="Wedding 컷편집 작업물">
+
+            <div class="portfolio-hover">
+              <strong>WEDDING</strong>
+              <span>CLICK!</span>
+            </div>
+
+          </div>
+
+          <div class="portfolio-info">
+
+            <p class="portfolio-desc">
+              웨딩 컷편집
+            </p>
+
+            <p>
+              사용툴 : Premiere
+            </p>
+
+            <p>
+              제작기간 : 3일
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <button class="arrow right" type="button">→</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- YOUTUBE SHORTS -->
+  <section id="VIDEODESIGN" class="portfolio">
+
+    <div class="section-head reveal">
+      <p class="section-label">PORTFOLIO</p>
+      <h2>Youtube Shorts</h2>
+    </div>
+
+    <div class="portfolio-menu reveal">
+
+      <button class="portfolio-btn"
+              type="button"
+              onclick="scrollToSection('WEBDESIGN')">
+        TYPO
+      </button>
+
+      <button class="portfolio-btn"
+              type="button"
+              onclick="scrollToSection('GRAPHICDESIGN')">
+        CUT
+      </button>
+
+      <button class="portfolio-btn active"
+              type="button">
+        SHORTS
+      </button>
+
+    </div>
+
+
+    <div class="portfolio-container reveal">
+
+      <button class="arrow left" type="button">←</button>
+
+      <div class="portfolio-slider">
+
+        <article class="portfolio-item">
+
+          <div class="portfolio-img-wrap thumb-tone"
+               data-video="video/shorts.final.mp4">
+
+            <img src="images/shorts.PNG"
+                 alt="Youtube Shorts 작업물">
+
+            <div class="portfolio-hover">
+              <strong>YOUTUBE SHORTS</strong>
+              <span>CLICK!</span>
+            </div>
+
+          </div>
+
+          <div class="portfolio-info">
+
+            <p class="portfolio-desc">
+              유튜브 쇼츠
+            </p>
+
+            <p>
+              사용툴 : Premiere / After effects
+            </p>
+
+            <p>
+              제작기간 : 1일
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <button class="arrow right" type="button">→</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="section-head reveal">
+      <p class="section-label">CONTACT</p>
+      <h2>Let’s Design</h2>
+    </div>
+
+    <div class="contact-box reveal">
+
+      <p>
+        영상편집, 모션그래픽, 웹 퍼블리싱 작업 문의 환영합니다.
+      </p>
+
+      <a href="mailto:kilkil789456@gmail.com">
+        E-MAIL : kilkil789456@gmail.com
+      </a>
+
+      <br>
+
+      <a href="tel:01087551668">
+        TEL : 010-8755-1668
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO MODAL -->
+  <div class="portfolio-modal">
+
+    <button class="close"
+            type="button"
+            aria-label="닫기">
+      &times;
+    </button>
+
+    <img class="modal-img"
+         alt="확대 이미지">
+
+    <video class="modal-video"
+           controls
+           playsinline>
+
+      <source src="" type="video/mp4">
+
+    </video>
+
+    <iframe
+      class="modal-youtube"
+      src=""
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+
+    <div class="footer-inner">
+
+      <p class="footer-logo">
+        PGS Portfolio
+      </p>
+
+      <p class="footer-text">
+        © 2026 Park Gyeongsu. All Rights Reserved.
+      </p>
+
+      <p class="footer-copy">
+        Motion Graphic · Video Editing · Web Publishing
+      </p>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
